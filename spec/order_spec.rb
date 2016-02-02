@@ -1,9 +1,16 @@
 require 'order'
+<<<<<<< HEAD
 require 'menu'
 
 describe Order do 
   subject(:order) {described_class.new(menu)}
   let(:menu) { instance_double("Menu")}
+=======
+
+describe Order do 
+  subject(:order) {described_class.new(menu)}
+  let(:menu) { double :menu}
+>>>>>>> fce44e17b8a5af6dc88d765771f003773cab657e
   let(:dishes) do
     {
       chicken: 2,
